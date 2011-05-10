@@ -30,4 +30,4 @@ requires:
   Moose: 0.74
   Moose::Util::TypeConstraints: 0
   Path::Class: 0.16
-version: 0.03
+version: 0.04

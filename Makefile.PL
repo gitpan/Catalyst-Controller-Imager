@@ -1,3 +1,4 @@
+exit 0 if $ENV{AUTOMATED_TESTING};
 
 use strict;
 use warnings;
@@ -39,7 +40,7 @@ my %WriteMakefileArgs = (
     'Moose::Util::TypeConstraints' => '0',
     'Path::Class' => '0.16'
   },
-  'VERSION' => '0.03',
+  'VERSION' => '0.04',
   'test' => {
     'TESTS' => 't/*.t'
   }

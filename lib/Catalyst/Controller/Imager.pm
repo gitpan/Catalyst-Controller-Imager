@@ -1,6 +1,6 @@
 package Catalyst::Controller::Imager;
 BEGIN {
-  $Catalyst::Controller::Imager::VERSION = '0.03';
+  $Catalyst::Controller::Imager::VERSION = '0.04';
 }
 
 use Moose;
@@ -37,7 +37,7 @@ Catalyst::Controller::Imager - generate scaled or mangled images
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -689,6 +689,12 @@ sub want_h :Action :Args(1) {
     
     $c->stash(scale => {h => $arg, mode => 'fill'});
 }
+
+=head1 BUGS
+
+probably many... Don't get confused if tests fail and carefully read the
+messages. The test-suite only will pass if Imager is configured with gif, jpeg
+and png support. 
 
 =head1 AUTHOR
 
