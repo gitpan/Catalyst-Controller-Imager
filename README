@@ -1,11 +1,11 @@
 
 
 This archive contains the distribution Catalyst-Controller-Imager,
-version 0.04:
+version 0.05:
 
   generate scaled or mangled images
 
-This software is copyright (c) 2011 by Wolfgang Kinkeldei.
+This software is copyright (c) 2013 by Wolfgang Kinkeldei.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

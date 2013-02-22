@@ -12,10 +12,11 @@ build_requires:
   Path::Class::File: 0
   Test::Exception: 0
   Test::More: 0
+  warnings: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.31
+  ExtUtils::MakeMaker: 6.30
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110580'
+generated_by: 'Dist::Zilla version 4.300030, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -25,9 +26,14 @@ requires:
   Catalyst::Controller: 0
   Catalyst::Runtime: 5.80
   FindBin: 1.47
-  Imager: 0.72
+  Image::Info: 1.31
+  Imager: 0.86
+  Imager::File::GIF: 0.82
+  Imager::File::JPEG: 0.82
+  Imager::File::PNG: 0.82
   MIME::Types: 0
-  Moose: 0.74
+  Moose: 1.0
   Moose::Util::TypeConstraints: 0
   Path::Class: 0.16
-version: 0.04
+  strict: 0
+version: 0.05

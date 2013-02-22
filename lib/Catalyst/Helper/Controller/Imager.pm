@@ -1,6 +1,6 @@
 package Catalyst::Helper::Controller::Imager;
-BEGIN {
-  $Catalyst::Helper::Controller::Imager::VERSION = '0.04';
+{
+  $Catalyst::Helper::Controller::Imager::VERSION = '0.05';
 }
 
 use strict;
@@ -11,7 +11,7 @@ Catalyst::Helper::Controller::Imager - Helper for Imager Controllers
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 

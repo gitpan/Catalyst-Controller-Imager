@@ -1,6 +1,6 @@
 package Catalyst::Controller::Imager;
-BEGIN {
-  $Catalyst::Controller::Imager::VERSION = '0.04';
+{
+  $Catalyst::Controller::Imager::VERSION = '0.05';
 }
 
 use Moose;
@@ -37,7 +37,7 @@ Catalyst::Controller::Imager - generate scaled or mangled images
 
 =head1 VERSION
 
-version 0.04
+version 0.05
 
 =head1 SYNOPSIS
 
@@ -429,7 +429,8 @@ sub image :Chained('scale') :PathPart('') :Args {
     
     # find real image file by stripping extensions
     while (!-f $c->path_to('root', $self->root_dir, @path, $file_name)) {
-        die 'requested image file not found' if ($file_name !~ s{\. \w+ \z}{}xms);
+        die 'requested image file "' . join('/', @path, $file_name) . '" not found'
+            if $file_name !~ s{\. \w+ \z}{}xms;
     }
     
     push @{$c->stash->{image_path}}, @path, $file_name;
@@ -694,7 +695,8 @@ sub want_h :Action :Args(1) {
 
 probably many... Don't get confused if tests fail and carefully read the
 messages. The test-suite only will pass if Imager is configured with gif, jpeg
-and png support. 
+and png support. In doubt install the required binary libraries and reinstall
+Imager.
 
 =head1 AUTHOR
 
